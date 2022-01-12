@@ -1,7 +1,8 @@
 <?php
 namespace Kav\Tasks;
 
-class Task0 {
+class Task0
+{
     const TEST_CONSTANTA = 'asd';
     public static $userName = 'Igor';
 
