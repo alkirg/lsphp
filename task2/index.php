@@ -20,3 +20,10 @@ echo '<br>';
 task2('+');
 
 echo '<hr>Задание 3:<br>';
+task3(3, 3);
+echo '<br>';
+task3(2, 5);
+echo '<br>';
+task3(-3, 3);
+echo '<br>';
+task3(3, 3.2);
