@@ -18,6 +18,8 @@ echo '<br>';
 task2('%', 2, 3, 5);
 echo '<br>';
 task2('+');
+echo '<br>';
+task2('+', 2);
 
 echo '<hr>Задание 3:<br>';
 task3(3, 3);
