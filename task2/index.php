@@ -38,3 +38,11 @@ task4();
 echo '<hr>Задание 5:<br>';
 echo task5('К', '', 'Карл у Клары украл Кораллы') . '<br>';
 echo task5('Две', 'Три', 'Две бутылки лимонада') . '<br>';
+
+echo '<hr>Задание 6:<br>';
+echo 'Запись в файл test.txt<br>';
+task61();
+echo 'Содержимое файла test.txt<br>';
+task62('test.txt');
+echo '<br><br>Содержимое файла test1.txt<br>';
+task62('test1.txt'); // несуществующий файл

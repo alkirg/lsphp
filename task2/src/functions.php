@@ -3,6 +3,8 @@ const ERR_NUMBERS = 'Введите числа';
 const ERR_OPERATION = 'Операция не поддерживается';
 const ERR_NEGATIVE = 'Числа должны быть больше ноля';
 const ERR_INTEGER = 'Числа должны быть целыми';
+const ERR_FILE_OPEN = 'Невозможно открыть файл';
+const ERR_FILE_WRITE = 'Файл недоступен для записи';
 
 function task1(array $strings, bool $implode = false)
 {
@@ -93,4 +95,35 @@ function task4()
 function task5(string $search, string $replace, string $string): string
 {
     return str_replace($search, $replace, $string);
+}
+
+function task61()
+{
+    $file = fopen('test.txt', 'a');
+    if (!$file) {
+        echo ERR_FILE_OPEN;
+        return false;
+    }
+    if (!is_writable('test.txt')) {
+        echo ERR_FILE_WRITE;
+        return false;
+    }
+    fwrite($file, 'Hello again!' . PHP_EOL);
+    fclose($file);
+    return true;
+}
+
+function task62(string $filename)
+{
+    if (!file_exists($filename)) {
+        echo ERR_FILE_OPEN;
+        return false;
+    }
+    $file = file_get_contents($filename);
+    if (!$file) {
+        echo ERR_FILE_OPEN;
+        return false;
+    }
+    echo $file;
+    return true;
 }
