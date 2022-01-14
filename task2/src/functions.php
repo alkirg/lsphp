@@ -89,3 +89,8 @@ function task4()
     echo date('d.m.Y H:i') . '<br>';
     echo strtotime('24.02.2016 00:00:00') . '<br>';
 }
+
+function task5(string $search, string $replace, string $string): string
+{
+    return str_replace($search, $replace, $string);
+}
