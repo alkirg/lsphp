@@ -31,3 +31,6 @@ echo '<br>';
 task3(3, 3.2);
 echo '<br>';
 task3(3, '3');
+
+echo '<hr>Задание 4:<br>';
+task4();
