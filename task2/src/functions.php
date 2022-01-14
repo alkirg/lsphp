@@ -97,7 +97,7 @@ function task5(string $search, string $replace, string $string): string
     return str_replace($search, $replace, $string);
 }
 
-function task61()
+function task61(): bool
 {
     $file = fopen('test.txt', 'a');
     if (!$file) {
@@ -113,7 +113,7 @@ function task61()
     return true;
 }
 
-function task62(string $filename)
+function task62(string $filename): bool
 {
     if (!file_exists($filename)) {
         echo ERR_FILE_OPEN;
