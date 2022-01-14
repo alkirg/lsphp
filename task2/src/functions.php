@@ -57,8 +57,12 @@ function task2(string $operation, float ...$numbers)
     echo mb_substr($resultString, 0, -2) . ' = ' . $result;
 }
 
-function task3(int $first, int $second)
+function task3($first, $second)
 {
+    if (!is_int($first) || !is_int($second)) {
+        echo ERR_INTEGER;
+        return;
+    }
     if ($first <= 0 || $second <= 0) {
         echo ERR_NEGATIVE;
         return;

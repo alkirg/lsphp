@@ -27,3 +27,5 @@ echo '<br>';
 task3(-3, 3);
 echo '<br>';
 task3(3, 3.2);
+echo '<br>';
+task3(3, '3');
